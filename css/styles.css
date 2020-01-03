@@ -15,15 +15,21 @@ body {
   height: 100vh;
   background-image: linear-gradient(
     to right bottom,
-    #845ec2,
-    #d65db1,
-    #ff6f91,
-    #ff9671,
-    #ffc75f,
-    #f9f871
+    #845ec2 5%,
+    #2c73d2,
+    #0081cf,
+    #0089ba,
+    #008e9b,
+    #008f7a
   );
 
   color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
