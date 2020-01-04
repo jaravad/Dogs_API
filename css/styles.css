@@ -102,6 +102,37 @@ button:hover {
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .img-container {
+    flex-basis: calc(100% / 3);
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    padding-top: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h1,
+  p {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .image-gallery {
+    width: 90%;
+  }
+
+  .img-container {
+    flex-basis: 50%;
+    height: 150px;
+  }
+}
+
 ::selection {
   background: #e0ebe8;
   color: #545454;
