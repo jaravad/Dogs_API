@@ -13,7 +13,8 @@ body {
   padding-top: 2rem;
   font-family: "Cabin", sans-serif;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-image: linear-gradient(
     to right bottom,
     #845ec2 5%,
@@ -72,4 +73,37 @@ button {
 
 button:hover {
   background-color: hsl(16, 50%, 50%);
+}
+
+.image-gallery {
+  width: 85%;
+  height: auto;
+  margin: 1rem auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.img-container {
+  flex-basis: 20%;
+  height: 200px;
+  padding: 1%;
+}
+
+.img-inner-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  max-width: 100%;
+}
+
+::selection {
+  background: #e0ebe8;
+  color: #545454;
+  text-shadow: none;
 }
