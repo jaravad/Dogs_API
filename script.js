@@ -58,7 +58,7 @@ button.addEventListener("click", function() {
         imgICont.setAttribute("class", "img-inner-container");
         const img = document.createElement("img");
         img.src = processedResponse.message;
-        img.alt = select.innerText;
+        img.alt = select.value;
 
         imgICont.appendChild(img);
         imgCont.appendChild(imgICont);
